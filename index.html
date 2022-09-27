@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML&CSS&Javascript</title>
+
+    <!-- Render All Elements  -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Font Awesom Library -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Main Css File -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Start Settings box -->
+
+    <aside class="settings-box">
+        <div class="toggle-settings">
+            <i class="fa fa-gear gear-icon"></i>
+        </div>
+        <h2> More Options </h2>
+        <div class="settings-container">
+            
+            <div class="option-box" style="background-color: #e9e9e9;">
+                <h3> Main Color </h3>
+                <ul class="colors-list">
+                    <li class="active" data-color="#03A9F4"></li>
+                    <li data-color="#7209b7"></li>
+                    <li data-color="#E91E63"></li>
+                    <li data-color="#009688"></li>
+                    <li data-color="#fb5607"></li>
+                    <!-- <li data-color="#3b28cc"></li> -->
+                </ul>
+            </div>
+
+            <div class="option-box">
+                <h3> Show Sections </h3>
+                <div class="bullets-option">
+                    <span class="yes" data-display="block" > Show </span>
+                    <span class="no active" data-display="none"> Hide </span>
+                </div>
+            </div>
+
+            <div class="option-box" style="background-color: #e9e9e9;">
+                <h3> Top Bar </h3>
+                <div class="position-option">
+                    <span class="yes" data-position="fixed"> Show </span>
+                    <span class="no active" data-position="relative"> Hide </span>
+                </div>
+            </div>
+
+            <div class="option-box">
+                <h3> Reset Options </h3>
+                <button class="reset-options"> Reset </button>
+            </div>
+
+        </div>
+
+    </aside>
+
+    <!-- End Settings box -->
+
+    <!-- Start Nav Bullets -->
+
+    <aside class="nav-bullets" style="display: none;">
+        <div class="bullet" data-section=".about-us">
+          <div class="tooltip"> About Us </div>
+        </div>
+        <div class="bullet" data-section=".statistics">
+          <div class="tooltip"> Statistics </div>
+        </div>
+        <div class="bullet" data-section=".gallery">
+          <div class="tooltip"> Gallery </div>
+        </div>
+        <div class="bullet" data-section=".timeline">
+          <div class="tooltip"> Timeline </div>
+        </div>
+        <div class="bullet" data-section=".features">
+          <div class="tooltip"> Features </div>
+        </div>
+        <div class="bullet" data-section=".testimonials">
+          <div class="tooltip"> Testimonials </div>
+        </div>
+    </aside>
+
+    <!-- End Nav Bullets -->
+
+    <!-- Start Slider -->
+    
+    <section class="slider">
+        <div class="container">
+            <header class="the-header">
+                <main class="logo" id="logo">
+                    <a href="#"> <img src="images/logo.png"> </a>
+                    <h1> Youssef </h1>
+                </main>
+                <nav>
+                    <button class="toggle-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="links">
+                        <li> <a href="#" class="active" data-section=".about-us"> About </a> </li>
+                        <li> <a href="#" data-section=".statistics">  Statistics </a> </li>
+                        <li> <a href="#" data-section=".gallery">      Gallery     </a> </li>
+                        <li> <a href="#" data-section=".timeline">     Timeline   </a> </li>
+                        <li> <a href="#" data-section=".features">     Features   </a> </li>
+                        <li> <a href="#" data-section=".testimonials"> Testimonials </a> </li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+            <article class="my-slide">
+                <div class="introduction-text">
+                    <h2> Amazing <span>Services</span> For You </h2>
+                    <p> I use HTML, CSS and JavaScript programing languages  </p>
+                </div>
+                <img src="images/tech-1.jpg" alt="" >
+            </article>
+
+            <article class="my-slide">
+                <div class="introduction-text">
+                    <h2> Amazing <span>Services</span> For You </h2>
+                    <p> I use HTML, CSS and JavaScript programing languages  </p>
+                </div>
+                <img src="images/tech-2.jpg" alt="">
+            </article>
+
+            <article class="my-slide">
+                <div class="introduction-text">
+                    <h2> Amazing <span>Services</span> For You </h2>
+                    <p> I use HTML, CSS and JavaScript programing languages  </p>
+                </div>
+                <img src="images/tech-3.jpg" alt="">
+            </article>
+
+            <article class="my-slide">
+                <div class="introduction-text">
+                    <h2> Amazing <span>Services</span> For You </h2>
+                    <p> I use HTML, CSS and JavaScript programing languages  </p>
+                </div>
+                <img src="images/tech-4.jpg" alt="">
+            </article>
+
+            <article class="my-slide">
+                <div class="introduction-text">
+                    <h2> Amazing <span>Services</span> For You </h2>
+                    <p> I use HTML, CSS and JavaScript programing languages  </p>
+                </div>
+                <img src="images/tech-5.jpg" alt="">
+            </article>
+
+            <article class="my-slide">
+                <div class="introduction-text">
+                    <h2> Amazing <span>Services</span> For You </h2>
+                    <p> I use HTML, CSS and JavaScript programing languages  </p>
+                </div>
+                <img src="images/tech-6.jpg" alt="">
+            </article>
+
+            <!-- onclick js -->
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+            <div class="dotsbox" style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+            </div>
+
+            <!-- /onclick js -->
+    
+    </section>
+
+    <!-- End Slider -->
+
+    <!-- Start About Us -->
+
+    <section class="about-us">
+        <h2> About Us </h2>
+        <div class="about-box">
+            <div class="image-box">
+                <img src="images/about-us.jpeg" alt=""> 
+            </div>
+            <div class="info-box">
+                <h3> Amazing Services & Features For You </h3>
+                <p> 
+                    This is some information about us, and we try to do our best to make our clients satisfied and feel happy.
+                    This is some information about us, and we try to do our best to make our clients satisfied and feel happy.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- End About Us -->
+
+    <!-- Start Statistics -->
+
+    <section class="statistics">
+        <h2> Statistics </h2>
+        <div class="container">
+            <div class="image-box">
+                <img src="images/the-skills.png" alt="">
+            </div>
+            <div class="skill-box">
+                <h3> React.js </h3>
+                <div class="skill-progress">
+                    <span data-progress="85%"></span>
+                </div>
+
+                <h3> Unit Testing </h3>
+                <div class="skill-progress">
+                    <span data-progress="75%"></span>
+                </div>
+
+                <h3> JavaScript </h3>
+                <div class="skill-progress">
+                    <span data-progress="65%"></span>
+                </div>
+
+                <h3> GitHub </h3>
+                <div class="skill-progress">
+                    <span data-progress="80%"></span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- End Statistics -->
+
+
+    <!-- Start Gallery -->
+
+    <section class="gallery">
+        <div class="container">
+            <h2> Gallery </h2>
+            <div class="gallery-images">
+                <div class="img-box">
+                    <img src="images/Gallery-0.jpg" alt="Technology photo">
+                </div>
+                <div class="img-box">
+                    <img src="images/Gallery-1.jpg" alt="Technology photo">
+                </div>
+                <div class="img-box">
+                    <img src="images/Gallery-2.jpg" alt="Technology photo">
+                </div>
+                <div class="img-box">
+                    <img src="images/Gallery-3.jpg" alt="Technology photo">
+                </div>
+                <div class="img-box">
+                    <img src="images/Gallery-4.jpg" alt="Technology photo">
+                </div>
+                <div class="img-box">
+                    <img src="images/Gallery-5.jpg" alt="Technology photo">
+                </div>
+                <div class="img-box">
+                    <img src="images/Gallery-6.jpg" alt="Technology photo">
+                </div>
+                <div class="img-box">
+                    <img src="images/Gallery-7.jpg" alt="Technology photo">
+                </div>
+                <div class="img-box">
+                    <img src="images/Gallery-8.jpg" alt="Technology photo">
+                </div>
+                <div class="img-box">
+                    <img src="images/Gallery-9.jpg" alt="Technology photo">
+                </div>
+                <div class="img-box">
+                    <img src="images/Gallery-10.jpg" alt="Technology photo">
+                </div>
+                <div class="img-box">
+                    <img src="images/Gallery-11.jpg" alt="Technology photo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End Gallery -->
+
+    <!-- Start Timeline -->
+
+    <section class="timeline">
+        <div class="container">
+            <h2> Timeline </h2>
+            <div class="timeline-content">
+                <div class="year"> 2022 </div>
+
+                <div class="left">
+                    <div class="content">
+                        <h3> Responsive Design </h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam nam quo quae autem pariatur blanditiis ad beatae, a praesentium fuga et cum tempore nemo? Sapiente quam ipsa corrupti laboriosam aut!</p>
+                    </div>
+                </div>
+
+                <div class="clear-fix"></div>
+
+                <div class="right">
+                    <div class="content">
+                        <h3> Modern and clean Design </h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam nam quo quae autem pariatur blanditiis ad beatae, a praesentium fuga et cum tempore nemo? Sapiente quam ipsa corrupti laboriosam aut!</p>
+                    </div>
+                </div>
+
+                <div class="clear-fix"></div>
+
+                <div class="year"> 2021 </div>
+
+                <div class="left">
+                    <div class="content">
+                        <h3> Clean Code </h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam nam quo quae autem pariatur blanditiis ad beatae, a praesentium fuga et cum tempore nemo? Sapiente quam ipsa corrupti laboriosam aut!</p>
+                    </div>
+                </div>
+
+                <div class="clear-fix"></div>
+
+                <div class="left">
+                    <div class="content">
+                        <h3> Browser Friendly </h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam nam quo quae autem pariatur blanditiis ad beatae, a praesentium fuga et cum tempore nemo? Sapiente quam ipsa corrupti laboriosam aut!</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- End Timeline -->
+
+    <!-- Start Features --> 
+
+    <section class="features">
+        <h2> Features </h2>
+        <div class="container">
+            <div class="feat-box">
+                <img src="images/ft-1.jpg" alt="">
+                <h3> Development </h3>
+                <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate tempore nihil ! </p>
+            </div>
+
+            <div class="feat-box">
+                <img src="images/ft-2.jpg" alt="">
+                <h3> Marketing </h3>
+                <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate tempore nihil ! </p>
+            </div>
+
+            <div class="feat-box">
+                <img src="images/ft-3.jpg" alt="">
+                <h3> Hosting </h3>
+                <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate tempore nihil ! </p>
+            </div>
+
+            <div class="feat-box">
+                <img src="images/ft-4.jpg" alt="">
+                <h3> Mobile Develope </h3>
+                <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate tempore nihil ! </p>
+            </div>
+
+            <div class="feat-box">
+                <img src="images/ft-5.jpg" alt="">
+                <h3> Cloud and Servers </h3>
+                <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate tempore nihil ! </p>
+            </div>
+
+            <div class="feat-box">
+                <img src="images/ft-6.jpg" alt="">
+                <h3> Seo </h3>
+                <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate tempore nihil ! </p>
+            </div>
+        </div>        
+    </section>
+
+    <!-- End Features -->
+
+    <!-- Start Testimonials -->
+
+    <section class="testimonials">
+        <h2> Testimonials </h2>
+        <div class="container">
+            <div class="ts-box">
+                <p>Iam very happy with the product its amazing and i recieve it very fast and the price was amazing.</p>
+                <div class="person-info">
+                    <img src="images/testimonials-1.jpg" alt="">
+                    <div class="inf-text">
+                    <h4> Youssef Omar </h4>
+                    <p> CEO of company </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ts-box">
+                <p>Iam very happy with the product its amazing and i recieve it very fast and the price was amazing.</p>
+                <div class="person-info">
+                    <img src="images/testimonials-2.jpg" alt="">
+                    <div class="inf-text">
+                    <h4> Youssef Omar </h4>
+                    <p> CEO of company </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ts-box">
+                <p>Iam very happy with the product its amazing and i recieve it very fast and the price was amazing.</p>
+                <div class="person-info">
+                    <img src="images/testimonials-3.jpg" alt="">
+                    <div class="inf-text">
+                    <h4> Youssef Omar </h4>
+                    <p> CEO of company </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ts-box">
+                <p>Iam very happy with the product its amazing and i recieve it very fast and the price was amazing.</p>
+                <div class="person-info">
+                    <img src="images/testimonials-4.jpg" alt="">
+                    <div class="inf-text">
+                    <h4> Youssef Omar </h4>
+                    <p> CEO of company </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ts-box">
+                <p>Iam very happy with the product its amazing and i recieve it very fast and the price was amazing.</p>
+                <div class="person-info">
+                    <img src="images/testimonials-5.jpg" alt="">
+                    <div class="inf-text">
+                    <h4> Youssef Omar </h4>
+                    <p> CEO of company </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ts-box">
+                <p>Iam very happy with the product its amazing and i recieve it very fast and the price was amazing.</p>
+                <div class="person-info">
+                    <img src="images/testimonials-6.png" alt="">
+                    <div class="inf-text">
+                    <h4> Youssef Omar </h4>
+                    <p> CEO of company </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End Testimonials -->
+
+    <!-- Start Contact Us -->
+
+    <section class="contact">
+        <h2> Contact Us </h2>
+        <div class="container">
+            <form class="left" action="">
+                <input type="text" placeholder="Your Name" name="username">
+                <input type="number" placeholder="Your Phone" name="phone">
+                <input type="email" placeholder="Your Email" name="email">
+                <input type="text" placeholder="Subject" name="subject">
+            </form>
+
+            <form class="right" action="">
+                <textarea name="message" placeholder="Your Message"></textarea>
+                <input type="submit" value="Send">
+            </form>
+        </div>
+    </section>
+
+    <!-- End Contact Us -->
+
+    <!-- Start Footer -->
+
+    <footer>
+        <div class="container">
+            <div class="logo">
+                <a href="#logo">
+                    <img src="images/logo.png" alt="">
+                    <h2> Youssef </h2>
+                </a>
+            </div>
+            <div class="social-icons">
+                <a class="facebook" href="https://www.facebook.com/YoussefOmar.yo/" target="_blank" title="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a class="instagram" href="https://www.instagram.com/youssef_omar.10/" target="_blank" title="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a class="github" href="https://github.com/Youssef2425" target="_blank" title="Github">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a class="linkedin" href="https://www.linkedin.com/in/youssef-omar-328127128/" target="_blank" title="Linked in">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+            <p class="copy-right">
+                &copy; 2022 <span> Youssef </span> All Rights Reserved 
+            </p>
+        </div>
+    </footer>
+
+    <!-- End Footer -->
+
+
+    <script src="js/plugins.js" ></script>
+</body>
+</html>
