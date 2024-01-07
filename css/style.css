@@ -238,6 +238,9 @@
 .slider header .logo {
     padding-top : 15px  ;
 }
+.slider header .logo a {
+    text-decoration: none;
+}
 .slider header .logo h1  {
     display   : inline-block ;
     position  : relative ;
@@ -286,11 +289,11 @@ header nav .toggle-menu {
 header nav .toggle-menu.menu-active:before {
     content  : '' ;
     position : absolute ;
-    bottom   : -7px;
-    right   : 5px;
+    bottom   : 4px;
+    right   : 17px;
     border-width : 15px ;
     border-style : solid ;
-    border-color : transparent transparent #FFF transparent ;
+    border-color : #fff transparent transparent transparent ;
 }
 header nav .toggle-menu:focus {
     outline : none ;
@@ -335,7 +338,7 @@ header nav .toggle-menu span {
     width  : 100% ;
     height : 100% ;
     -webkit-animation: zoomin 40s ;
-    animation: zoomin 40s ;
+    animation: zoomin 35s ;
 }
 @-webkit-keyframes zoomin {
     from {transform: scale(1, 1);}
@@ -430,9 +433,6 @@ header nav .toggle-menu span {
     justify-content: space-around;
     background-color : #f0f0f0 ;
 }
-.slider .container header.fixed main a {
-    text-decoration : none ;
-}
 .slider .container header.fixed li a {
     color : var(--main-color) ;
     font-weight : bold ;
@@ -442,6 +442,9 @@ header nav .toggle-menu span {
 } 
 .slider header.fixed .toggle-menu span  {
     background-color : #444 ;
+}
+header.fixed nav .toggle-menu.menu-active:before {
+    border: none;
 }
 
 @media ( max-width : 991px ) {
@@ -632,7 +635,7 @@ header nav .toggle-menu span {
 }
 .gallery .gallery-images {
     display    : flex ;
-    flex-wrap  :  wrap ;
+    flex-wrap  : wrap ;
 }
 .gallery .gallery-images .img-box {
     flex-basis : 23%;
@@ -643,7 +646,8 @@ header nav .toggle-menu span {
     background-color: #F6F6F6 ;
 }
 .gallery .gallery-images .img-box img {
-    max-width: 100%;
+    width: 100%;
+    height: 100%;
 }
 .popup-overlay {
     position : fixed ;
@@ -660,15 +664,15 @@ header nav .toggle-menu span {
     top       : 50% ;
     transform : translate(-50%, -50%) ;
     border    : 1px solid #CCC ;
-    padding   : 20px ;
+    padding   : 12px ;
     z-index   : 1010 ;
     background-color : #FFF ;
 }
 .popup-box h3 {
-    font-weight : bold ;
-    text-align  : center ;
-    margin      : 0 0 15px ;
-    color       : var(--main-color) ;
+    font-weight  : bold ;
+    text-align   : center ;
+    margin-bottom: 6px;
+    color        : var(--main-color) ;
 }
 .popup-box img {
     max-width  : 100% ;
@@ -697,6 +701,9 @@ header nav .toggle-menu span {
 @media ( max-width : 767px ) {
     .gallery .gallery-images .img-box {
         flex-basis : 48% ;
+    }
+    .popup-box {
+        width: 90%;
     }
 }
 @media ( max-width : 575px ) {

@@ -280,7 +280,7 @@ const myslide = document.querySelectorAll('.my-slide'),
 let dotCounter = 1;
 
 // Create Timer function
-let timer = setInterval(autoSlide, 8000);
+let timer = setInterval(autoSlide, 5000);
 function autoSlide() {
 	dotCounter += 1;
 	slidefun(dotCounter);
@@ -303,17 +303,17 @@ function currentSlide(n) {
 // Create resetTimer function
 function resetTimer() {
 	clearInterval(timer);
-	timer = setInterval(autoSlide, 8000);
+	timer = setInterval(autoSlide, 5000);
 }
 
 // Create slidefun function  ( The main function )
 function slidefun(n) {
 	
 	let i;
-	for(i = 0; i<myslide.length; i++){
+	for(i = 0; i < myslide.length; i++){
 		myslide[i].style.display = "none";
 	}
-	for(i = 0; i<dot.length; i++) {
+	for(i = 0; i < dot.length; i++) {
 		dot[i].className = dot[i].className.replace(' active', '');
 	}
 	if(n > myslide.length){
@@ -338,7 +338,7 @@ const   progressSpans = document.querySelectorAll('.skill-progress span');
 	window.onscroll = function () {
 
 		// Skills Animate Width
-		if ( window.scrollY >= statistics.offsetTop - 350 ) {
+		if ( window.scrollY >= statistics.offsetTop - 310 ) {
 			progressSpans.forEach((span) => {
 				span.style.width = span.dataset.progress;
 			});
